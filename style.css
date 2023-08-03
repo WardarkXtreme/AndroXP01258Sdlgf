@@ -227,3 +227,19 @@ video{
     object-fit: cover;
     /* opacity: 0.05; */
 }
+.inline{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.btnbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 50%;
+    
+}
