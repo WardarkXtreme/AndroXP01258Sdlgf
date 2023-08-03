@@ -24,15 +24,31 @@
           <form>
             <div class="column1">
               <p class="budget">Cash donné<span id="render-cash">...</span></p>
-              <label for="range"></label>
-              <input type="range" name="range" id="range" min="0" max="500" step="1" value="250" onchange="showVal(this.value)"/>
-              <output for="range" class="output"></output>
+              <div class="inline">
+                <select name="cash_select" id="cash_select">
+                  <option value="1">1 €</option>
+                  <option value="5">5 €</option>
+                  <option value="20">20 €</option>
+                  <option value="50">50 €</option>
+                  <option value="100">100 €</option>
+                  <option value="200">200 €</option>
+                  <option value="500">500 €</option>
+                  <option value="1000">1000 €</option>
+                </select>
+                <button id="btn_more1">+</button><button id="btn_less1">-</button>
+              </div>
             </div>
             <div class="column1">
               <p class="budget">Prix au meuge<span id="render-price">...</span></p>
-              <label for="range"></label>
-              <input type="range" name="range" id="range2" min="0" max="100" step="0.25" value="50" onchange="showVal2(this.value)"/>
-              <output for="range" class="output"></output>
+              <div class="inline">
+                <select name="price_select" id="price_select">
+                  <option value="025">0.25 €</option>
+                  <option value="050">0.50 €</option>
+                  <option value="500">5.00 €</option>
+                  <option value="1000">10.00 €</option>
+                </select>
+                <button id="btn_more2">+</button><button id="btn_less2">-</button>
+              </div>
             </div>
             <div class="column1">
               <p>vous devriez recevoir<span id="render">...</span>grammes</p>
